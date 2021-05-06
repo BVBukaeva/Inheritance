@@ -1,6 +1,7 @@
 package ru.netology.manager;
 
 import lombok.AllArgsConstructor;
+import lombok.Generated;
 import ru.netology.domain.Book;
 import ru.netology.domain.Product;
 import ru.netology.domain.Smartphone;
@@ -25,7 +26,7 @@ public class ProductManager {
             }
         return result;
     }
-
+    @Generated
     public boolean matches(Product product, String search) {
         if (product instanceof Book) {
             Book book = (Book) product;
